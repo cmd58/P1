@@ -1,4 +1,43 @@
 {% extends "base.html" %}
 {% block content %}
-    Python & Flask
+        <body>
+
+ <section class="container padding">
+ <div class="text-heading-primary">
+    Using Python and Flask allows for very useful testing of your code.
+ </div>
+ <div class="text-heading">
+
+ </div>
+
+ <div class="grid-2-cols">
+ <div class="text">
+
+
+        <h2>Testing with Pytest (with examples from my code)</h2>
+        <p>Pytest's purpose is to run multiple tests in parallel, which reduces the execution time of the test suite. We can run unit tests, functional tests, and integration tests. Throughout creating this project I often used Pytest to check my work and confirm all pages were running smoothly.</p>
+        <h2>Creating and Testing Simple Pages</h2>
+        <p>For this project I created the simple_pages package under the app package. I then added a templates directory where I included my 4 content pages and Home page. The simple_pages_test.py which I created in the tests package, was created to test each of the 5 pages as I added to the project. These tests were really handy at keeping me on my toes, and saved me a lot of time while doing this project. Otherwise I would've been scanning through the code for hours looking for a small mistake.</p>
+        <h2>Flask Blueprint</h2>
+     <p>In Flask, there are <b>Blueprints</b>. Blueprints are a way to organize a group of related views and other code. Rather than registering views and other code directly with an application, they are registered with a <b>blueprint</b>. The blueprint is then registered with the application when it is available in the factory function.</p>
+        <h2>Project Outline with File Purposes</h2>
+        <p>tests <- package of py files containing code to test the simple pages for this Project, and more for Project 2</p>
+        <p>simple_pages <- package of all the sites pages including 4 content pages and 1 home page. As well as the simple about page containing my name, class, and photo.</p>
+        <p>templates <- the templates file under apps contains the base.html file which allows the same menu and footer to be easily displayed on all simple pages.</p>
+        <p>static <- contains the css files for the project to be applied across all simple pages via the base.html file. Also contains the JavaScript to implement Bootstrap. </p>
+        <p>Dockerfile <-File used to create an image to run in a container that runs the program</p>
+        <p>.gitignore <- purpose is to ensure that certain files not tracked by Git remain untracked. </p>
+        <p>heroku.yml <-  allows you to build Docker images on Heroku.</p>
+        <p>__init__.py <- called a constructor, or initializer, and is automatically called when you create a new instance of a class. Within that function, the newly created object is assigned to the parameter self.</p>
+        <p>docker-compose.yml <- Orchestration file that contains the configuration to develop locally, it overrides the Dockerfile to run the flask development server instead of running the gunicorn server that is used for hosting on Heroku</p>
+
+     <h2>References</h2>
+     <p><a href="https://flask.palletsprojects.com/en/2.0.x/tutorial/views/">https://flask.palletsprojects.com/en/2.0.x/tutorial/views/</a></p>
+     <p><a href="https://stackoverflow.com/questions/8609153/why-do-we-use-init-in-python-classes">https://stackoverflow.com/questions/8609153/why-do-we-use-init-in-python-classes</a></p>
+
+ </div>
+ <div class="css-image img-01"><img src="https://miro.medium.com/max/640/1*XzIRJGujfqAiOV2EIQgR_Q.png" alt="Python and Flask" width="450" height="300"></div>
+ </div>
+ </section>
+ </body>
 {% endblock %}

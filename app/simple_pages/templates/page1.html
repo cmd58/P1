@@ -1,44 +1,53 @@
 {% extends "base.html" %}
 {% block content %}
-    Git
-     <body>
- <header>Understanding Git: Key Terms and Uses</header>
+    <body>
+
  <section class="container padding">
  <div class="text-heading-primary">
  Git is a free and open-source version control system used to handle small to very large projects.
  </div>
  <div class="text-heading">
- All major tech companies use Git to some extent, with big names like Netflix, Shopify, and Udemy relying on Git to manage their entire code base.
+
  </div>
 
  <div class="grid-2-cols">
  <div class="text">
+     <p>Here are some key terms to know when thinking about Git:</p>
      <ul>
-         <li>
-        Here are some key terms to know when thinking about Git:
-    </li>
     <li>
-        Branch -
+        <b>Branch</b> - Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository.
     </li>
+
     <li>
-        Merge -
+        <b>Merge</b> - Git's way of putting a forked history back together again. The git merge command lets you take independent lines of development created by git branch and integrate them into a single branch.
     </li>
+
     <li>
-        Commit -
+        <b>Commit</b> - The git commit command captures a snapshot of the project's currently staged changes.
     </li>
+
     <li>
-        Tags -
+        <b>Tags</b> -  ref's that point to specific points in Git history. Tagging is generally used to capture a point in history that is used for a marked version release (i.e. v1. 0.1).
     </li>
+
     <li>
-        Repositories -
+        <b>Repositories</b> - contain the collection of files of various different versions of a Project. Files are imported from the repository into the local server of the user for further modifications in the content of the file.
     </li>
      </ul>
 
-     <ul>
-         <li>Keeping the definition of these terms in mind, we can begin to understand how to work with Git.</li>
-     </ul>
+
+         <p>Keeping the definition of these terms in mind, we can begin to understand how to work with Git. The GitHub workflow can be condensed into branching, commits, pull requests, collaboration, and then merge.</p>
+         <h2>The Master Branch</h2>
+         <p>All the code in production is stored in the <b>master</b> branch. Master branch should always be working, so we should create a new branch where we can test out changes and additions.</p>
+         <h2>Push vs Pull</h2>
+         <p>We commit and push on the new branch and then open a pull request. A push forces your commits to the target repo while a pull refers to the target repo grabbing you commits to be present in the repo.</p>
+         <h2>Merging & Forks</h2>
+         <p>If the pull request is approved we can merge the branch and the master. If we don't have write access to the repo we can <b>fork</b> the reop onto our own GitHub account. We can make commits on that fork and then make a pull request on the original fork.</p>
+         <h2>Git Commands in the Command Line</h2>
+         <p>Git has a variety of very usefull commands, but they can be tough to learn. <a href="https://rogerdudler.github.io/git-guide/">Click here</a> for a great compilation of the most useful Git commands. </p>
+
  </div>
- <div class="css-image img-01"></div>
+ <div class="css-image img-01"><img src="https://git-scm.com/images/logos/logomark-orange@2x.png" alt="Git Logo" width="350" height="300"></div>
  </div>
  </section>
  </body>
