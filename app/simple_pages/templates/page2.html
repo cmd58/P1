@@ -1,23 +1,39 @@
 {% extends "base.html" %}
 {% block content %}
-    Docker
-{% endblock %}
+    <body>
 
-<body>
- <header>Understanding Git: Key Terms and Uses</header>
  <section class="container padding">
  <div class="text-heading-primary">
- Git is a free and open-source version control system used to handle small to very large projects.
+    Docker is a tool that allows developers to easily deploy their applications in a <b>containers</b> to run on the host operating system (like Linux).
  </div>
  <div class="text-heading">
- All major tech companies use Git to some extent, with big names like Netflix, Shopify, and Udemy relying on Git to manage their entire code base.
+
  </div>
 
  <div class="grid-2-cols">
  <div class="text">
 
+        <p>Here are some key terms to know when thinking about Docker:</p>
+    <ul>
+        <li><b>Containers</b> - a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.</li>
+        <li><b>Images</b> - The blueprints of an application which form the basis of containers.</li>
+        <li><b>Docker Hub</b> - A registry of Docker images. Think of the registry as a directory of all available Docker images.</li>
+    </ul>
+
+         <p>Keeping this terminology in mind, we can begin working with Docker. Like Git, Docker shares the concept of a repository, pushes, and pulls and comes with a bunch of useful commands. Repositories (which can be created in Docker Hub by clicking on Repositories and then Create Repository) allow you to share container images with others through the Docker community. Docker images can be pushed to Docker hub with the <q>docker push</q> command. To connect to Docker when starting a project in PyCharm, go to Services, and then add and start Docker. Then use the <q>docker compose up --build</q> command to build the container. In the terminal (not PyCharm) first use <q>docker ps</q> command to get the name of the existing container. Then, use <q>docker exec -it [container name] /bin/bash</q> to get a bash shell in the container. From there you can use <q>docker exec -it [container name] [command]</q> to execute any command you want in the container. Below is a list of useful Docker commands to help you!</p>
+        <h2>Useful Docker commands:</h2>
+    <ul>
+
+         <li>create — Create a container from an image.</li>
+         <li>start — Start an existing container.</li>
+         <li>ls — List running containers.</li>
+         <li>rm— Delete a stopped container.</li>
+         <li>build — Build an image.</li>
+         <li>push — Push an image to a remote registry.</li>
+     </ul>
  </div>
- <div class="css-image img-01"></div>
+ <div class="css-image img-01"><img src="https://phoenixnap.com/kb/wp-content/uploads/2021/04/container-vs-virtual-machine.png" alt="Containers with Docker" width="450" height="300"></div>
  </div>
  </section>
  </body>
+{% endblock %}
