@@ -9,10 +9,9 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     {% block head %}
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/f-style.css') }}" />
 
-        <title>{% block title %}{% endblock %}Christina's Project 1</title>
+        <title>{% block title %}{% endblock %}Christina's Project 2</title>
     {% endblock %}
 
 </head>
@@ -23,7 +22,7 @@
             <!-- As a link -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
-                    <a class="navbar-brand" href="/">My Site</a>
+                    <a class="navbar-brand" href="/"><img src="data:image/png;base64,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" alt="Home" width="25" height="25"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -47,6 +46,18 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url_for('simple_pages.show', page="page4")}}">CI/CD</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page5")}}">Pylint</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page6")}}">AAA Testing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page7")}}">OOP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page8")}}">SOLID</a>
                             </li>
                         </ul>
                     </div>
