@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+            <body>
+
+ <section class="container padding">
+ <div class="text-heading-primary">
+    SOLID is an acronym that helps us to remember the first five principles of object-oriented design.
+ </div>
+ <div class="text-heading">
+
+ </div>
+
+ <div class="grid-2-cols">
+ <div class="text">
+     <h2>What does SOLID stand for and how was it implemented in the calculator program?</h2>
+     <p><b>S</b>ingle Responsibility - Classes  have one and only one reason to change, meaning that a class should have only one job which was maintained in the calculator program.</p>
+     <p><b>O</b>pen/Closed Principle - Objects are open for extension but closed for modification.</p>
+     <p><b>L</b>iskov Substitution Principle - Let q(x) be a property provable about objects of x of type T. Then q(y) should be provable for objects y of type S where S is a subtype of T. To model this in the calculator program every child class is substitutable for its parent class. This is the case with the class Calculator.</p>
+     <p><b>I</b>nterface Segregation Principle - A client should never be forced to implement an interface that it doesn’t use, or clients shouldn’t be forced to depend on methods they do not use.</p>
+     <p><b>D</b>ependency Inversion Principle - Entities depend on abstractions, not on concretions. The high-level module does not depend on the low-level module, but they depend on abstractions.</p>
+
+     <h2>Design Patters: The Factory Pattern</h2>
+     <p>Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. The central idea in Factory Method is to provide a separate component with the responsibility to decide which concrete implementation should be used based on some specified parameter. Factory Method should be used in every situation where an application (client) depends on an interface (product) to perform a task and there are multiple concrete implementations of that interface. You need to provide a parameter that can identify the concrete implementation and use it in the creator to decide the concrete implementation. Some common problems that can be solved with the Factory Method could be:</p>
+     <ul>
+         <li>Replacing complex logical code</li>
+         <li>Constructing related objects from external data</li>
+         <li>Constructing related objects from external data</li>
+         <li>Combining similar features under a common interface</li>
+         <li>Integrating related external services</li>
+     </ul>
+
+     <h2>References</h2>
+     <p><a href="https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design">https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design</a></p>
+     <p><a href="https://refactoring.guru/design-patterns/factory-method">https://refactoring.guru/design-patterns/factory-method</a></p>
+     <p><a href="https://realpython.com/factory-method-python/#recognizing-opportunities-to-use-factory-method">https://realpython.com/factory-method-python/#recognizing-opportunities-to-use-factory-method</a></p>
+
+ </div>
+ </div>
+ </section>
+ </body>
+{% endblock %}

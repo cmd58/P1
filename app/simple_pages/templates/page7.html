@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+            <body>
+
+ <section class="container padding">
+ <div class="text-heading-primary">
+    Object Oriented Programming is a programming “paradigm” based on classes and objects. It aims to create reusable pieces of code (classes) to prevent being redundant in your program.
+ </div>
+ <div class="text-heading">
+
+ </div>
+
+ <div class="grid-2-cols">
+ <div class="text">
+     <h2>OOP Glossary:</h2>
+     <p><b>object</b> - instances of a class created with specifically defined data.</p>
+     <p><b>class</b> - user-defined data types that act as the blueprint for individual objects, attributes and methods.</p>
+     <p><b>namespace</b> - a declarative region that provides a scope to the identifiers (the names of types, functions, variables, etc) inside it.</p>
+     <p><b>constructor</b> - a special kind of method that Python calls when it instantiates an object using the definitions found in your class. </p>
+     <p><b>fixture</b> - define the steps and data that constitute the arrange phase of a test.</p>
+     <p><b>type hint</b> - a way to make Python feel statically typed giving developers a way to make their code as self-describing as possible.</p>
+     <p><b>type cast</b> - also known as "explicit type conversion"  the data types of objects are converted using predefined functions by the user.</p>
+     <p><b>unit test</b> - a software testing method by which individual units of source code are put under various tests to determine whether they are fit for use.</p>
+     <p><b>static variable</b> - a variable that has been allocated "statically", meaning that its lifetime (or "extent") is the entire run of the program.</p>
+     <p><b>static method</b> - a method defined as a member of an object but is accessible directly from an API object's constructor, rather than from an object instance created via the constructor.</p>
+     <p><b>instance method</b> -  methods which require an object of its class to be created before it can be called.</p>
+     <p><b>instance property</b> - a Python variable belonging to only one object.</p>
+     <p><b>instantiation</b> - creating a copy of the class which inherits all class variables and methods.</p>
+     <p><b>encapsulation</b> - the process of wrapping up variables and methods into a single entity.</p>
+     <p><b>inheritance</b> - existing classes can be modified by a new class.</p>
+     <p><b>polymorphism</b> - refers to the use of a single type entity (method, operator or object) to represent different types in different scenarios.</p>
+     <p><b>abstraction</b> -  a process of handling complexity by hiding unnecessary information from the user.</p>
+
+     <h2>How the Calculator Program Demonstrates OOP</h2>
+     <p><b>Encapsulation</b> - The implementation and state of each object which are the calculators operations (add, subtract, multiply) are privately held inside a defined class which is the Calculator class.</p>
+     <p><b>Inheritance</b> - Classes can reuse code from other classes. In Python, every class inherits from a built-in basic class called 'object'. In the case of the calculator program the constructor (the '__init__') function of the Calculator class is invoked when we create an object variable or an instance of the class.</p>
+     <p><b>Polymorphism</b> - Child class that have the same name as the methods in the parent class. This can be seen in the calculator_test.py where we import the calculator class as the default result property for the new Calculator class "calculator".</p>
+     <p><b>Abstraction</b> - Objects only reveal internal mechanisms that are relevant for the use of other objects, hiding any unnecessary implementation code. This is implemented by using "self" throughout the calculator program.</p>
+
+
+     <h2>References</h2>
+     <p><a href="https://www.techtarget.com/searchapparchitecture/definition/object-oriented-programming-OOP#:~:text=Object%2Doriented%20programming%20(OOP)%20is%20a%20computer%20programming%20model,has%20unique%20attributes%20and%20behavior.">https://www.techtarget.com/searchapparchitecture/definition/object-oriented-programming-OOP#:~:text=Object%2Doriented%20programming%20(OOP)%20is%20a%20computer%20programming%20model,has%20unique%20attributes%20and%20behavior.</a></p>
+
+ </div>
+ </div>
+ </section>
+ </body>
+{% endblock %}

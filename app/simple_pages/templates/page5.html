@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+            <body>
+
+ <section class="container padding">
+ <div class="text-heading-primary">
+    Pylint is a tool that checks for errors in Python code and then gives the code an overall mark based on the number and severity of warnings and/or errors.
+ </div>
+ <div class="text-heading">
+
+ </div>
+
+ <div class="grid-2-cols">
+ <div class="text">
+     <h2>Installing Pylint</h2>
+     <p>Install pylint with the command: pip install pylint</p>
+
+     <h2>How Pylint Works</h2>
+     <p>Pylint is a static code analysis tool that is meant to be called from the command line, where you can give it a python package(s) or module(s) to analyze. Given a file pylint will attempt to convert it to a module that it can analyze instead. Pylint uses both unittests and functional tests. To use pylint, simply use the command: pylint (filename/modulename).py </p>
+
+
+     <h2>The Output of Pylint</h2>
+     <p>Pylint returns an output of semantic, syntax, and style errors as well as bugs and redundant code warnings. It also returns a score or mark that lets us know how ideal the given code is.</p>
+
+     <h2>Why Use Pylint?</h2>
+     <p>When coding in Python, you do not have a compiler to catch bugs for you, so that is where pylint comes in. It acts as a lint tool that catches the bugs in your code. There are others like pylint such as pychecker. pyflakes, and flake8. </p>
+
+
+
+
+
+
+     <h2>References</h2>
+     <p><a href="https://pylint.pycqa.org/en/latest/#:~:text=Pylint%20is%20a%20tool%20that,details%20about%20the%20code's%20complexity.">https://pylint.pycqa.org/en/latest/#:~:text=Pylint%20is%20a%20tool%20that,details%20about%20the%20code's%20complexity.</a></p>
+ </div>
+ </div>
+ </section>
+ </body>
+{% endblock %}

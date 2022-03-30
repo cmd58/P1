@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+            <body>
+
+ <section class="container padding">
+ <div class="text-heading-primary">
+    AAA Testing is a suggested testing concept that says tests should be divided into three sections, Arrange, Act, and Assert.
+ </div>
+ <div class="text-heading">
+
+ </div>
+
+ <div class="grid-2-cols">
+ <div class="text">
+     <h2>Tutorial with Python</h2>
+     <p>The “Arrange-Act-Assert” (also AAA and 3A) pattern of testing focuses each test on a single action. The advantage of this focus is that it clearly separates the arrangement of the System Under Test (SUT) and the assertions that are made on it after the action. Check out an example of a full AAA Test code to the right. The pattern looks like this:</p>
+     <ul>
+         <li>Test definition, docstring, and <b>Arrangement</b></li>
+         <li>Empty Line</li>
+         <li>Single line of code, the <b>Act</b></li>
+         <li>Empty Line</li>
+         <li>Assert block code or the <b>Assertions</b></li>
+     </ul>
+
+     <h4>So what do all of these pieces mean and more importantly how do we use them?</h4>
+     <p>Follow these steps for an AAA compliant test!</p>
+     <ol>
+         <li>Define the test function with a meaningful name (as it will be used if the test fails in the output).</li>
+         <li>Optional: add a short single line docstring about the test.</li>
+         <li>Arrange - Using a single block of code with no empty lines, set up the conditions for the test action. Do NOT use assert.</li>
+         <li>Act - This is the line of code where the action is taken on the SUT. Each line should start with result =.</li>
+         <li>Assert - This is the block of code that performs assertions on the state of the SUT after the action. Use a single block of code with no empty lines. First test result, then side effects.</li>
+     </ol>
+
+
+
+
+
+     <h2>References</h2>
+     <p><a href="https://jamescooke.info/arrange-act-assert-pattern-for-python-developers.html">https://jamescooke.info/arrange-act-assert-pattern-for-python-developers.html</a></p>
+
+ </div>
+ </div>
+ </section>
+ </body>
+{% endblock %}
